@@ -4,7 +4,7 @@
 #
 Name     : jsonlines
 Version  : 1.2.0
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/90/cd/0beacbcfdf9b3af9e7c615cb3dba7ec4be1030d4b283e3c9717e3fd9af3c/jsonlines-1.2.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/90/cd/0beacbcfdf9b3af9e7c615cb3dba7ec4be1030d4b283e3c9717e3fd9af3c/jsonlines-1.2.0.tar.gz
 Summary  : Library with helpers for the jsonlines file format
@@ -18,24 +18,11 @@ BuildRequires : buildreq-distutils3
 BuildRequires : six
 
 %description
-=========
 jsonlines
-=========
-
-``jsonlines`` is a Python library to simplify working with jsonlines_
-and ndjson_ data.
-
-.. _jsonlines: http://jsonlines.org/
-.. _ndjson: http://ndjson.org/
-
-* Documentation: https://jsonlines.readthedocs.io/
-
-* Python Package Index (PyPI): https://pypi.python.org/pypi/jsonlines/
-
-* Source code and issue tracker: https://github.com/wbolster/jsonlines
-
-.. image:: https://travis-ci.org/wbolster/jsonlines.svg?branch=master
-   :target: https://travis-ci.org/wbolster/jsonlines
+        =========
+        
+        ``jsonlines`` is a Python library to simplify working with jsonlines_
+        and ndjson_ data.
 
 %package license
 Summary: license components for the jsonlines package.
@@ -59,6 +46,7 @@ Summary: python3 components for the jsonlines package.
 Group: Default
 Requires: python3-core
 Provides: pypi(jsonlines)
+Requires: pypi(six)
 
 %description python3
 python3 components for the jsonlines package.
@@ -73,15 +61,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583161654
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1603394277
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
