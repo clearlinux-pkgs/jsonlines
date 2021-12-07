@@ -1,5 +1,5 @@
 PKG_NAME := jsonlines
-URL = https://files.pythonhosted.org/packages/bf/40/a1b1810a09e3e85567c17831fcc2fc8e48ad9a1d3b02e8be940c43b908a8/jsonlines-2.0.0.tar.gz
+URL = https://files.pythonhosted.org/packages/dd/fc/c207aafc82eb5d166b45723d9ff5844dde55474e0fc14f8180326779b996/jsonlines-3.0.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
