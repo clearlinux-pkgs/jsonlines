@@ -4,7 +4,7 @@
 #
 Name     : jsonlines
 Version  : 3.0.0
-Release  : 21
+Release  : 22
 URL      : https://files.pythonhosted.org/packages/dd/fc/c207aafc82eb5d166b45723d9ff5844dde55474e0fc14f8180326779b996/jsonlines-3.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/dd/fc/c207aafc82eb5d166b45723d9ff5844dde55474e0fc14f8180326779b996/jsonlines-3.0.0.tar.gz
 Summary  : Library with helpers for the jsonlines file format
